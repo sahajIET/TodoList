@@ -11,7 +11,7 @@ const _=require("lodash");
 // if you want to prepare for this change. 
 // Or use `mongoose.set('strictQuery', true);` to suppress this warning.
 mongoose.set("strictQuery", false);//it is added to avoid the depreciation warning wala msg
-mongoose.connect(process.env.MONGO_ID);
+mongoose.connect(process.env.MONGODB_URI);
 
 const itemSchema=new mongoose.Schema({
   name: String
