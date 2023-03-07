@@ -8,8 +8,8 @@
   },
   "scripts": {
     "dev": "nodemon app.js",
-    "start": "node app.js"
-    
+    "start": "node app.js",
+    "builds":"node app.js"
   },
   
   "author": "",
