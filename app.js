@@ -44,6 +44,10 @@ const defaultarr=[item1,item2,item3];
 
 const app = express();
 
+app.get("/health",(req,res)=>{
+  res.send("The app is working");
+})
+
 app.set('view engine', 'ejs');
 
 app.use(express.urlencoded({extended: true}));
